@@ -1,3 +1,4 @@
+
 import win32gui
 import win32ui
 import win32con
@@ -5,9 +6,7 @@ import pygetwindow
 import numpy
 import cv2
 
-
-
-def start_jie_tu():
+def start_image():
     count = 0
     window_process = pygetwindow.getActiveWindow()
 
@@ -63,17 +62,3 @@ def start_jie_tu():
         print("截图了",count,"次")
 
         return img
-
-def start_yolo(image):
-    print("start yolov8")
-
-if __name__ == '__main__':
-
-    '''
-    https://gpushare.com/store          A100/40g  4块/1小时
-    https://www.autodl.com/home         4090/24GB  3块 1小时
-    '''
-
-
-
-    pass
