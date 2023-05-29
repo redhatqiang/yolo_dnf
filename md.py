@@ -29,6 +29,9 @@ if __name__ == '__main__':
     
     r-w-m-g-j-x-a-b-c-d-e-f-h-k-l-m
     
+    https://github.com/fzls/djc_helper
+    https://github.com/awsay/game-helper
+    https://github.com/Zageku/DNF_pvf_python
     '''
 
     pass
