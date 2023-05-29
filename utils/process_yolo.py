@@ -5,7 +5,7 @@ import pygetwindow
 import numpy
 import cv2
 
-def start_yolo(image):
+def StartYOLOV8():
     count = 0
     window_process = pygetwindow.getActiveWindow()
 
@@ -55,6 +55,5 @@ def start_yolo(image):
 
         count += 1
         print("截图了", count, "次")
-
 
         print("start yolov8")
