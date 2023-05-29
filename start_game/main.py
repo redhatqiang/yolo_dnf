@@ -1,18 +1,16 @@
-import sys
 import time
-import os
-
-
 from start_game.next_person import NextPerson
 from start_game.next_game import NextGame
-from start_game.keyboard_operation import LeftRun,TopRun,RightRun,DownRun,StopRun
+from start_game.keyboard_operation import LeftRun,TopRun,RightRun,DownRun,StopRun,KaiBeiDong
 from start_game.mouse_operation import MouseClick,MouseDoubleClick
 import win32gui
 import win32ui
 import win32con
-import pygetwindow
 import numpy
 import cv2
+import pydirectinput
+import pygetwindow
+import pyautogui
 
 class StartGame():
     def __int__(self):
@@ -29,7 +27,10 @@ class StartGame():
     def next_person(self):
         if self.next_person:
             NextPerson()
-
+        self.__int__()
+    def kai_bei_dong(self):
+        if not self.bei_dong:
+            KaiBeiDong()
 
 
     def start(self):

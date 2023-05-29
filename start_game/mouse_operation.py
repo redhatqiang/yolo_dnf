@@ -1,5 +1,4 @@
 
-
 import pydirectinput
 import pygetwindow
 import pyautogui

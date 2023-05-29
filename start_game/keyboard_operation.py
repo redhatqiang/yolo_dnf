@@ -22,3 +22,6 @@ def DownRun():
 
 def StopRun():
     pass
+
+def KaiBeiDong():
+    pass
