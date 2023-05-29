@@ -50,19 +50,20 @@ class StartGame():
             "width :": width,
             "height:": height,
         }
-        print("get windows app process info :", d)
+        print("get windows app process info : ", d)
 
 
 
-        print("load dnf model success ... ")
+        print("load dnf model success ", "." * 20)
 
 
 
         for i in range(3, 0, -1):
-            print(i, "s after start ")
+            print(i, "s after start ","." * 20)
             time.sleep(1)
 
-        print("start ... ")
+        print("start run ", "." * 20)
+        time.sleep(1)
 
         while True:
             hdesktop = win32gui.GetDesktopWindow()
@@ -79,24 +80,24 @@ class StartGame():
             img = numpy.frombuffer(signedIntsArray, dtype='uint8')
             img.shape = (height, width, 4)
 
+            # 使用opencv 显示到屏幕
             # cv2.cvtColor(img, cv2.COLOR_BGRA2RGB)
             # cv2.imwrite("img.jpg",img,[int(cv2.IMWRITE_JPEG_QUALITY), 100])
-            # 显示到屏幕
             # cv2.namedWindow('img') #命名窗口
             cv2.imshow("img", img)  # 显示
             cv2.waitKey(1)
 
-            # 保存图片
+            # 保存图片到本地
             # screenshot.SaveBitmapFile(mem_dc, 'screenshot.png')
 
             # 释放临时内存
             mem_dc.DeleteDC()
             win32gui.DeleteObject(screenshot.GetHandle())
 
-            count += 1
-            print("截图了", count, "次")
+            # count += 1
+            # print("截图了", count, "次")
 
-            print("start yolov8")
+
 
 
 
