@@ -16,23 +16,21 @@ import pyautogui
 class StartGame():
     def __int__(self):
         self.bei_dong = False
-        self.boss_jiang_li = False
-        self.next_person = False
-
 
     def next_game(self):
-        if self.boss_jiang_li:
-            NextGame()
+        NextGame()
         self.__int__()
 
     def next_person(self):
-        if self.next_person:
-            NextPerson()
+        NextPerson()
         self.__int__()
+
     def kai_bei_dong(self):
         if not self.bei_dong:
             KaiBeiDong()
+            self.bei_dong = True
 
+    
 
     def start(self):
         count = 0
@@ -56,15 +54,15 @@ class StartGame():
 
 
 
-        print("load dnf model success ", "." * 20)
+        print("load dnf model success ")
 
 
 
         for i in range(3, 0, -1):
-            print(i, "s after start ","." * 20)
+            print(i, "s after start ")
             time.sleep(1)
 
-        print("start run ", "." * 20)
+        print("start run ")
         time.sleep(1)
 
         while True:
@@ -98,13 +96,13 @@ class StartGame():
 
             # count += 1
             # print("截图了", count, "次")
-
+            # time.sleep(1)
+            # return
 
 
 
 
 if __name__ == '__main__':
-    # app = StartGame()
-    # app.start()
+    app = StartGame()
+    app.start()
 
-    print("222222")
