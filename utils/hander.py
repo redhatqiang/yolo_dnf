@@ -26,16 +26,6 @@ def get_window_process():
     return  top, left, width, height
 
 
-def cai_shu_ju():
-    image_num = 425
-    while True:
-        image = pyautogui.screenshot(region=get_window_process())
-        # image.save('./model_image/' + str(image_num) + '.png')
-
-        image.save('./image/' + str(image_num) + '.png')
-        image_num += 1
-        time.sleep(0.5)
-        print("截图", image_num, "次")
 
 
 def mai_zhuang_bei():
