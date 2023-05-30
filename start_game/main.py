@@ -12,6 +12,7 @@ import pydirectinput
 import pygetwindow
 import pyautogui
 
+
 class StartGame():
     def __int__(self):
         self.bei_dong = False
@@ -84,8 +85,8 @@ class StartGame():
             # 使用opencv 显示到屏幕
             # cv2.cvtColor(img, cv2.COLOR_BGRA2RGB)
             # cv2.imwrite("img.jpg",img,[int(cv2.IMWRITE_JPEG_QUALITY), 100])
-            # cv2.namedWindow('img') #命名窗口
-            cv2.imshow("img", img)  # 显示
+            # cv2.namedWindow('img')
+            cv2.imshow("img", img)
             cv2.waitKey(1)
 
             # 保存图片到本地
