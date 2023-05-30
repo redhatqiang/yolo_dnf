@@ -1,14 +1,20 @@
+import math
+
 import win32gui
 import win32ui
 import win32con
 import pygetwindow
 import numpy
 import cv2
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+from ultralytics import YOLO
 
 
-def TestYOLOModel(model_path):
+def TestYOLOModel(model):
 
     print("start load yolo model")
+    model = YOLO('../train_model/runs/detect/train' + str(model) + '/weights/best.pt')
     print("load model success ")
 
     window_process = pygetwindow.getActiveWindow()
@@ -42,9 +48,11 @@ def TestYOLOModel(model_path):
         signedIntsArray = screenshot.GetBitmapBits(True)
         img = numpy.frombuffer(signedIntsArray, dtype='uint8')
         img.shape = (height, width, 4)
+        res = model.predict('',device='0',)
 
         # 展示图片
-        cv2.imshow("img", img)  # 显示
+        # cv2.imshow("img", img)  # 显示
+        cv2.imshow("img", res[0].plot())  # 显示
         cv2.waitKey(1)
 
         # 释放临时内存
@@ -57,11 +65,11 @@ def TestYOLOModel(model_path):
 
 if __name__ == '__main__':
 
-    model_path = ""
-    # model_path = ""
-    # model_path = ""
-    # model_path = ""
-    # model_path = ""
+    model = "4"
+    # model = ""
+    # model = ""
+    # model = ""
+    # model = ""
 
-    TestYOLOModel(model_path)
+    TestYOLOModel(model)
 

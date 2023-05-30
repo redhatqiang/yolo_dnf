@@ -1,7 +1,12 @@
 
 
 
+
 if __name__ == '__main__':
+    # pytorch 使用的是不是gpu  true是
+    import torch
+    print(torch.cuda.is_available())
+
 
     '''
     
