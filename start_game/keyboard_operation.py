@@ -40,6 +40,7 @@ def KaiBeiDong():
     Operation('right')
     Operation('right')
     Operation('space')
+    Operation('t')
 
 
 
