@@ -1,7 +1,7 @@
-
+from start_game.mouse_operation import MouseClick,MouseDoubleClick
 import pydirectinput
-import pygetwindow
 import pyautogui
+
 
 def NextPerson():
     # esc

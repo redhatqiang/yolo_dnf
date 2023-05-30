@@ -1,17 +1,13 @@
-import time
 from start_game.next_person import NextPerson
 from start_game.next_game import NextGame
 from start_game.keyboard_operation import LeftRun,TopRun,RightRun,DownRun,StopRun,KaiBeiDong
-from start_game.mouse_operation import MouseClick,MouseDoubleClick
 import win32gui
 import win32ui
 import win32con
 import numpy
 import cv2
-import pydirectinput
 import pygetwindow
-import pyautogui
-
+import time
 
 class StartGame():
     def __int__(self):
@@ -30,10 +26,11 @@ class StartGame():
             KaiBeiDong()
             self.bei_dong = True
 
-    
 
     def start(self):
         count = 0
+        print("start load yolo model")
+        print("load model success ")
 
         window_process = pygetwindow.getActiveWindow()
 
@@ -51,12 +48,6 @@ class StartGame():
             "height:": height,
         }
         print("get windows app process info : ", d)
-
-
-
-        print("load dnf model success ")
-
-
 
         for i in range(3, 0, -1):
             print(i, "s after start ")
