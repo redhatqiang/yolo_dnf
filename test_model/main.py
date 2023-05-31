@@ -49,10 +49,10 @@ def TestYOLOModel(model):
         img.shape = (height, width, 4)
 
         # opencv 转换图片格式  BGR --> RGB
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        image_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
         # res = model.predict(img,device='0')
-        res = model.predict(img,device='cpu')
+        res = model.predict(image_rgb,device='cpu')
 
         # opencv 转换图片格式 RGB --> BGR
         image_bgr = cv2.cvtColor(res[0].plot(), cv2.COLOR_RGB2BGR)

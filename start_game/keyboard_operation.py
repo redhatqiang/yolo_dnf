@@ -3,20 +3,12 @@ import pydirectinput
 import pyautogui
 
 
-def LeftRun():
-    pydirectinput.keyDown('left')
-
-
-def RightRun():
-    pydirectinput.keyDown('right')
-
-
-def TopRun():
-    pydirectinput.keyDown('up')
-
-
-def DownRun():
-    pydirectinput.keyDown('down')
+def RenOperation(direction):
+    pydirectinput.keyDown(direction)
+    time.sleep(0.1)
+    pydirectinput.keyUp(direction)
+    time.sleep(0.1)
+    pydirectinput.keyDown(direction)
 
 
 def StopRun():
