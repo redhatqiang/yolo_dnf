@@ -19,14 +19,14 @@ def StopRun():
 
 
 def Operation(key):
-    pyautogui.keyDown(key)
-    # pydirectinput.keyDown(key)
+    pydirectinput.keyDown(key)
     time.sleep(0.2)
-    pyautogui.keyUp(key)
-    # pydirectinput.keyUp(key)
+    pydirectinput.keyUp(key)
+
 
 def TypingOperation(input_str):
     pydirectinput.typewrite(input_str)
+
 
 def KaiBeiDong():
     Operation('right')
