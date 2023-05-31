@@ -17,10 +17,9 @@ def StopRun():
     pydirectinput.keyUp('left')
     pydirectinput.keyUp('right')
 
-
 def Operation(key):
     pydirectinput.keyDown(key)
-    time.sleep(0.2)
+    time.sleep(0.1)
     pydirectinput.keyUp(key)
 
 
@@ -33,6 +32,11 @@ def KaiBeiDong():
     Operation('right')
     Operation('space')
     Operation('t')
+    
+def MaiZhuangBei():
+    pass
+
+
 
 
 

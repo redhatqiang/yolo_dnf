@@ -34,8 +34,6 @@ def mai_zhuang_bei():
         pydirectinput.press(i)
         time.sleep(0.2)
 
-def yi_jian_shi_qu():
-    pydirectinput.press('0')  # 小键盘的0
 
 
 # 开启被动
