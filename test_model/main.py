@@ -12,7 +12,8 @@ from ultralytics import YOLO
 def TestYOLOModel(model):
 
     print("start load yolo model")
-    model = YOLO('../train_model/runs/detect/train' + str(model) + '/weights/best.pt')
+    model = YOLO('../train_model/yolov8n.pt')
+    # model = YOLO('../train_model/runs/detect/train' + str(model) + '/weights/best.pt')
     print("load model success ")
 
     window_process = pygetwindow.getActiveWindow()
@@ -42,15 +43,18 @@ def TestYOLOModel(model):
         mem_dc.SelectObject(screenshot)
         mem_dc.BitBlt((0, 0), (width, height), img_dc, (left, top), win32con.SRCCOPY)
 
-        # 展示图片 使用 numpy 转换
+        # 展示图片 使用 numpy  转换  opencv 转换 rgb 格式
         signedIntsArray = screenshot.GetBitmapBits(True)
         img = numpy.frombuffer(signedIntsArray, dtype='uint8')
         img.shape = (height, width, 4)
-        res = model.predict('',device='0',)
+        img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+
+        # res = model.predict(img,device='0')
+        res = model.predict(img,device='cpu')
 
         # 展示图片
-        # cv2.imshow("img", img)  # 显示
-        cv2.imshow("img", res[0].plot())  # 显示
+        cv2.imshow("img", res[0].plot())
+        # cv2.imshow("img", img)
         cv2.waitKey(1)
 
         # 释放临时内存
