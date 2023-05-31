@@ -48,13 +48,13 @@ def TestYOLOModel(model):
         img = numpy.frombuffer(signedIntsArray, dtype='uint8')
         img.shape = (height, width, 4)
 
-        # opencv 转换 rgb 格式
+        # opencv 转换 rgb 格式  BGR --> RGB
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
         # res = model.predict(img,device='0')
         res = model.predict(img,device='cpu')
 
-        # opencv 转换 bgr
+        # opencv 转换 RGB --> BGR
         image_bgr = cv2.cvtColor(res[0].plot(), cv2.COLOR_RGB2BGR)
 
         # 展示图片
