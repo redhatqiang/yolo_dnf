@@ -13,6 +13,15 @@ if __name__ == '__main__':
     https://gpushare.com/store          A100/40g  4块/1小时
     https://www.autodl.com/home         4090/24GB  3块 1小时
     
+    控制鼠标键的包
+        目前使用
+            pydirectinput   
+            pyautogui
+        
+        PyUserInput
+        pynput
+
+    
     
     r -- 人物
     w -- 物品
@@ -38,6 +47,9 @@ if __name__ == '__main__':
     https://github.com/fzls/djc_helper
     https://github.com/awsay/game-helper
     https://github.com/Zageku/DNF_pvf_python
+    
+    
+    
     '''
 
     pass

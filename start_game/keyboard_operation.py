@@ -32,7 +32,7 @@ def KaiBeiDong():
     Operation('right')
     Operation('space')
     Operation('t')
-    
+
 def MaiZhuangBei():
     pass
 
