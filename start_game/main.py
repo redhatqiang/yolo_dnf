@@ -1,6 +1,6 @@
 from start_game.next_person import NextPerson
 from start_game.next_game import NextGame
-from start_game.keyboard_operation import LeftRun,TopRun,RightRun,DownRun,StopRun,KaiBeiDong
+from start_game.keyboard_operation import RenOperation,StopRun,KaiBeiDong
 import win32gui
 import win32ui
 import win32con

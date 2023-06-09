@@ -12,8 +12,8 @@ from ultralytics import YOLO
 def TestYOLOModel(model):
 
     print("start load yolo model")
-    model = YOLO('../train_model/yolov8n.pt')
-    # model = YOLO('../train_model/runs/detect/train' + str(model) + '/weights/best.pt')
+    # model = YOLO('../train_model/yolov8n.pt')
+    model = YOLO('../train_model/runs/detect/train' + str(model) + '/weights/best.pt')
     print("load model success ")
 
     window_process = pygetwindow.getActiveWindow()

@@ -20,7 +20,7 @@ if __name__ == '__main__':
         
         PyUserInput
         pynput
-
+    https://github.com/taojy123/KeymouseGo  按键精灵
     
     
     r -- 人物
