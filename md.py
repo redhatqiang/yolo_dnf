@@ -23,12 +23,13 @@ if __name__ == '__main__':
     https://github.com/taojy123/KeymouseGo  按键精灵
     
     
-    r -- 人物
-    w -- 物品
-    m -- 门
-    g -- 怪物
-    j -- boss 奖励
-    x -- 下一个角色
+    ren -- 人物
+    wu  -- 物品
+    men -- 门
+    monster -- 怪物
+    BossJiangLi -- boss 奖励
+    NextPerson -- 下一个角色
+    NextGame -- 下一句游戏
     
     a -- 第一张地图
     b -- 第二张地图
@@ -36,14 +37,9 @@ if __name__ == '__main__':
     d -- 第四张地图
     e -- 第五张地图
     f -- 第六张地图
-    h -- boss 地图
+    g -- boss 地图
     
-    k -- 
-    l -- 
-    m -- 
-    
-    r-w-m-g-j-x-a-b-c-d-e-f-h-k-l-m
-    
+
     https://github.com/fzls/djc_helper
     https://github.com/awsay/game-helper
     https://github.com/Zageku/DNF_pvf_python
