@@ -25,7 +25,7 @@ if __name__ == '__main__':
     
     Person      -- 人物       20 * 4
     WuPin       -- 物品       5*金币
-    Men         -- 门         60
+    Men         -- 门         35
     Monster     -- 怪物       35
     BossJiangLi -- boss 奖励  25
     NextPerson  -- 下一个角色  5
