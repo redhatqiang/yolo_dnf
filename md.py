@@ -43,7 +43,10 @@ if __name__ == '__main__':
     
     35
     
-    195  + 60 + 1000
+    195  基础
+    
+    人物 * 20  站立左 站立右  跑左 跑右
+    1000  金币 材料 装备 
 
     https://github.com/fzls/djc_helper
     https://github.com/awsay/game-helper
