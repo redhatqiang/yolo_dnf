@@ -23,13 +23,14 @@ if __name__ == '__main__':
     https://github.com/taojy123/KeymouseGo  按键精灵
     
     
-    Person      -- 人物       20 * 4
+    Person      -- 人物       20
     WuPin       -- 物品       5*金币
     Men         -- 门         35
     Monster     -- 怪物       35
     BossJiangLi -- boss 奖励  25
     NextPerson  -- 下一个角色  5
     NextGame    -- 下一句游戏  5
+    
     
     
     a -- 第一张地图 
@@ -39,12 +40,12 @@ if __name__ == '__main__':
     e -- 第五张地图
     f -- 第六张地图
     g -- boss 地图
-    
     35
     
-    220  基础
-    
+  
+    人物 * 80    4个人物
     物品 * 1000  金币 材料 装备 
+
 
     https://github.com/fzls/djc_helper
     https://github.com/awsay/game-helper
