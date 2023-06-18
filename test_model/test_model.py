@@ -1,4 +1,7 @@
+import time
+
 import win32gui
+import win32print
 import win32ui
 import win32con
 import pygetwindow
@@ -7,6 +10,11 @@ import cv2
 import os
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 from ultralytics import YOLO
+
+
+
+
+
 
 
 def TestYOLOModel(model):
@@ -33,6 +41,7 @@ def TestYOLOModel(model):
     }
     print("get windows app process info :", d)
 
+
     while True:
         hdesktop = win32gui.GetDesktopWindow()
         desktop_dc = win32gui.GetWindowDC(hdesktop)
@@ -51,8 +60,8 @@ def TestYOLOModel(model):
         # opencv 转换图片格式  BGR --> RGB
         image_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
-        # res = model.predict(img,device='0')
-        res = model.predict(image_rgb,device='cpu')
+        res = model.predict(image_rgb,device='0')
+        # res = model.predict(image_rgb,device='cpu')
 
         # opencv 转换图片格式 RGB --> BGR
         image_bgr = cv2.cvtColor(res[0].plot(), cv2.COLOR_RGB2BGR)
@@ -72,11 +81,11 @@ def TestYOLOModel(model):
 
 if __name__ == '__main__':
 
-    model = "4"
+    model = "10"
     # model = ""
     # model = ""
     # model = ""
     # model = ""
 
     TestYOLOModel(model)
-
+    # print(get_real_resolution())

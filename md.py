@@ -23,13 +23,15 @@ if __name__ == '__main__':
     https://github.com/taojy123/KeymouseGo  按键精灵
     
     
-    Person      -- 人物       20
-    WuPin       -- 物品       5*金币
-    Men         -- 门         35
-    Monster     -- 怪物       35
-    BossJiangLi -- boss 奖励  25
-    NextPerson  -- 下一个角色  5
-    NextGame    -- 下一句游戏  5
+    角色     
+    金币       
+    装备
+    门        
+    怪物     
+    boss
+    boss翻牌 
+    下一个角色 
+    下一个人物  
     
     
     

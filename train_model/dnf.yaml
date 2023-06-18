@@ -3,12 +3,12 @@ train: ../train/images
 val: ../valid/images
 test: ../test/images
 
-nc: 8
-names: ['a', 'b', 'c', 'd', 'e', 'f', 'h', 'x']
+nc: 1
+names: ['x']
 
 roboflow:
   workspace: studydnf
   project: yolov8dnf
-  version: 1
+  version: 15
   license: CC BY 4.0
-  url: https://universe.roboflow.com/studydnf/yolov8dnf/dataset/1
+  url: https://universe.roboflow.com/studydnf/yolov8dnf/dataset/15
