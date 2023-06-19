@@ -23,15 +23,15 @@ if __name__ == '__main__':
     https://github.com/taojy123/KeymouseGo  按键精灵
     
     
-    角色     
-    金币       
-    装备
-    门        
-    怪物     
-    boss
-    boss翻牌 
-    下一个角色 
-    下一个人物  
+    角色       Person
+    金币       JinBi
+    装备       ZhuangBei
+    门         Men
+    怪物       XiaoGuai
+    boss      Boss
+    boss翻牌   BossJiangLi
+    下一个角色  NextPerson
+    下一局游戏  NextGame
     
     
     
