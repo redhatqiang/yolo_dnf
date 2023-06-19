@@ -24,8 +24,8 @@ if __name__ == '__main__':
     
     
     角色       Person
-    金币       JinBi
-    装备       ZhuangBei
+    金币       WuPin
+    装备       WuPin
     门         Men
     怪物       XiaoGuai
     boss      Boss
