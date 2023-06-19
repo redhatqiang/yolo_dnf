@@ -24,25 +24,14 @@ if __name__ == '__main__':
     
     
     角色       Person
-    金币       WuPin
-    装备       WuPin
     门         Men
     怪物       XiaoGuai
     boss      Boss
     boss翻牌   BossJiangLi
     下一个角色  NextPerson
     下一局游戏  NextGame
+    金币|装备|材料 -- WuPin
     
-    
-    
-    a -- 第一张地图 
-    b -- 第二张地图
-    c -- 第三张地图
-    d -- 第四张地图
-    e -- 第五张地图
-    f -- 第六张地图
-    g -- boss 地图
-    35
     
   
     人物 * 80    4个人物
